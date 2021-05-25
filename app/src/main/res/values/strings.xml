@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">chap%</string>
+    <string name="btn1">강아지</string>
+    <string name="btn2">고양이</string>
+    <string name="btn3">달팽이</string>
+    <string name="btn4">햄스터</string>
+</resources>
