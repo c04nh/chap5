@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_frame);
 
         linearDog = findViewById(R.id.linear_dog);
         linearCat = findViewById(R.id.linear_cat);
@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnCat = findViewById(R.id.btn_cat);
         Button btnSnail = findViewById(R.id.btn_snail);
 
-        btnDog.setOnClickListener(btnLinear);
-        btnCat.setOnClickListener(btnLinear);
-        btnSnail.setOnClickListener(btnLinear);
+        btnDog.setOnClickListener(btnListener);
+        btnCat.setOnClickListener(btnListener);
+        btnSnail.setOnClickListener(btnListener);
     }
 
-    View.OnClickListener btnLinear = new View.OnClickListener() {
+    View.OnClickListener btnListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             linearDog.setVisibility(View.INVISIBLE);
